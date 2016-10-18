@@ -1,7 +1,8 @@
 #include<iostream>
 
 using namespace std;
-
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/assignments/MIT6_096IAP11_assn01.pdf
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/assignments/MIT6_096IAP11_assn02.pdf
 int main(){
     int n;
     while(true){
