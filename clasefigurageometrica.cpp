@@ -89,15 +89,24 @@ class cuadrilatero: public figurageometrica{
             if(var==var1){
                 if(var==var2){
                     if(var2==var3){
-                        return "Cuadrado";
+                        int var4,var5;
+                        var4=distancia(x[0],y[0],x[2],y[2]);
+                        var5=distancia(x[1],y[1],x[3],y[3]);
+                        if(var4==var5){
+                            return "Cuadrado";
+                        }
+                        return "Rombo";
                     }
                     return "Trapecio";
                 }
                 return "Trapezoide";
             }
             if(var==var2){
-                if(var1==var3){
-                    return "Rectangulo";
+                if((y[1]-y[0])/(x[1]-x[0])==(y[3]-y[2])/(x[3]-x[2])){
+                    if(((y[3]-y[0])/(x[3]-x[0]))*((y[1]-y[0])/(x[1]-x[0]))==-1){
+                        return "Rectangulo";
+                    }
+                    return "Romboide";
                 }
                 return "Trapecio";
             }
