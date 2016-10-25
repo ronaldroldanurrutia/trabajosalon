@@ -122,7 +122,7 @@ class cuadrilatero: public figurageometrica{
             if(var==var1){
                 if(var==var2){
                     if(var2==var3){
-                        int var4,var5;
+                        double var4,var5;
                         var4=distancia(x[0],y[0],x[2],y[2]);
                         var5=distancia(x[1],y[1],x[3],y[3]);
                         if(var4==var5){
@@ -242,9 +242,9 @@ class triangulo : public figurageometrica{
 };
 int main(){
 int n;
-class cuadrilatero *cuadrado1;
+class cuadrilatero cuadrado1;
 cin>>n;
-cuadrado1->formar();
-cout<<cuadrado1->area()<<endl;
+cuadrado1.formar();
+cout<<cuadrado1.area()<<endl;
 return 0;
 }
